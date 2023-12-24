@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom left, #D41D1D, #531616f1);
+}
+
+.slides {
+  gap: 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  width: 400px;
+  height: 600px;
+  padding: 32px;
+  border-radius: 33px;
+}
+
+.preview {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  color: #D41D1D;
+  text-decoration: none;
+}
+
+.preview-text {
+  margin-top: 5px;
+}
+
+.title {
+  font-size: 30px;
+  width: 100%;
+  font-weight: bold;
+  color: #eea509;
+  font-family: 'Mountains of Christmas', serif;
+}
+
+.content {
+  width: 200px;
+}
+
+img {
+  width: auto;
+  height: 250px;
+  background: transparent;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.button {
+  background-color: #D41D1D;
+  color: #fff;
+  width: 200px;
+  height: 40px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 999px;
+}
+
+.dot-box,
+.content,
+.title {
+  text-align: center;
+}
+
+.dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 2px;
+  background-color: #c1c1c1;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color .6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #D41D1D;
+}
+
+.creator {
+  color: #c1c1c1;
+  font-size: 12px;
+
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

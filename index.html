@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR" oncontextmenu="return false">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/icon.jpg" type="image/png">
+  <title>Feliz Natal!</title>
+</head>
+
+<body>
+  <main class="container">
+    <a href="#" class="preview" onclick="addSlides(-1)">
+      <span>&#10094;</span>
+      <span class="preview-text">Voltar</span>
+    </a>
+    <h1 class="creator">Feito por Fernando &copy; 2023</h1>
+    <div>
+      <div class="slides fade">
+        <img src="assets/tree.png" alt="imagem 1">
+        <h2 class="title">Alegria e amor</h2>
+        <p class="content">
+          Natal é tempo de alegria. Celebre com quem você ama, compartilhe bons momentos e sorria para a vida.
+        </p>
+      </div>
+
+      <div class="slides fade">
+        <img src="assets/snowman.png" alt="imagem 2">
+        <h2 class="title">Paz</h2>
+        <p class="content">
+          Natal é tempo de paz. Deseje o bem a todos, perdoe os erros e abrace as diferenças.
+        </p>
+      </div>
+
+      <div class="slides fade">
+        <img src="assets/nahida.png" alt="imagem 3">
+        <h2 class="title">Gratidão</h2>
+        <p class="content">
+          Natal é tempo de união. Fortaleça seus laços, reúna sua família e cultive o amor.
+          <b>Desejo um feliz Natal para você!</b>
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <button class="button" onclick="addSlides(1)">Próximo</button>
+      <div class="dot-box">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
